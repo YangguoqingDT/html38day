@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dl</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .w{
+        width: 990px;
+        margin: 0 auto;
+      }
+      .head{
+        width: 280px;
+        height: 280px;
+        border: 1px solid gray;
+        padding: 10px 10px;
+        background-color: white;
+      }
+      .head .size{
+        width:280px;
+        height: 50px;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .size1{
+        float: left;
+        height: 50px;
+        line-height: 50px;
+      }
+      .size2{
+        float: right;
+        color: red;
+        height: 50px;
+        line-height: 50px;
+      }
+     .bor1{
+       height: 50px;
+       width: 278px;
+       border: 1px solid gray;
+       position: relative;
+       margin-bottom: 20px;
+     }
+     .bor1>input{
+       border: none;
+       outline: none;
+       float: left;
+       height: 50px;
+     }
+     .bor1>span{
+       position: absolute;
+       left: 50px;
+       top: 15px;
+       font-size: 14px;
+     }
+     .bor1>p{
+       position: absolute;
+       left: 0px;
+       top: -20px;
+       display: none;
+       font-size: 13px;
+     }
+     .bor2{
+       height: 50px;
+       width: 278px;
+       border: 1px solid gray;
+       position: relative;
+       margin-bottom: 20px;
+     }
+     .bor2>input{
+       border: none;
+       outline: none;
+       float: left;
+       height: 50px;
+       float: left;
+     }
+     .bor2>span{
+       position: absolute;
+       left: 50px;
+       top: 15px;
+       font-size: 14px;
+     }
+     .btn{
+       height: 50px;
+       width: 280px;
+       line-height: 50px;
+       background-color: red;
+       text-align: center;
+       cursor: pointer;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="w">
+    <div class="head ">
+      <div class="size">
+        <div class="size1">
+          扫码登录
+        </div>
+        <div class="size2">
+          帐号登录
+        </div>
+      </div>
+      <div class="bor1">
+        <input type="text" name="username">
+        <p>请输入账户和密码</p>
+        <span>邮箱/用户名/已验证手机</span>
+      </div>
+      <div class="bor2">
+        <input type="passwd" name="password">
+        <span>密码</span>
+      </div>
+      <div class="btn">
+        登录
+      </div>
+
+    </div>
+  </div>
+  <script src="./jquery.min.js"></script>
+  <script type="text/javascript">
+
+  $(function()  {
+   $(".bor1  span").click(function(){
+    $(".bor1 input").focus();
+
+
+   });
+
+   $(".bor1 input").focus(function(){
+
+     $(".bor1 span").hide();
+   });
+ });
+
+
+
+    //
+    // $(".bor1 input").focus(function(){
+    //
+    //   $("bor1 span").hide();
+    // }).blur(function(){
+    //
+  //    $("bor1 span").show();
+  //  });
+   //
+   //
+  //  $(".bor2 span").click(function(){
+   //
+  //   $(".bor2 input").focus();
+   //
+   //
+  //  });
+   //
+  //  $(".bor2 input").focus(function(){
+   //
+  //    $("bor2 span").hide();
+  //  }).blur(function(){
+   //
+  //    $("bor2 span").show();
+  //  });
+   //
+  //  $(".btn").click(function(){
+   //
+  //    var username=$(".bor1 input[name=username]").val();
+  //    var password=$(".bor2 input[name=password]").val();
+   //
+   //
+  //  if(!username || !password){
+   //
+  //    $("bor1 p").show();
+  //  }
+  //  });
+   //
+   //
+   //
+   //
+   //
+  //  $.ajax({
+   //
+
+
+
+
+
+  //
+  //  });
+  //
+  //
+  // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var i,a,b,c;
+    for(i=100;i<1000;i++){
+       a = Math.floor(i/100);//百位
+       b = Math.floor((i/10)%10);//十位
+       c = Math.floor(i%10);//个位
+       if(Math.pow(a,3)+Math.pow(b,3)+Math.pow(c,3) == i){
+          console.log(i)
+       }
+    }
+    </script>
+  </body>
+</html>

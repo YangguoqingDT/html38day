@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>简单易用的倒计时js代码</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    body {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .time {
+      margin: 50px auto;
+      height: 100px;
+      line-height: 100px;
+      width: 800px;
+      background-color: rgb(224, 154, 81);
+    }
+    .next{
+      margin: 200px auto;
+      width: 1000px;
+      height: 200px;
+      background-color: rgb(204, 27, 74);
+     text-align: center;
+     line-height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="time"><h1>距离双11最后抢购时间仅剩
+    <span id="t_d">00天</span>
+    <span id="t_h">00时</span>
+    <span id="t_m">00分</span>
+    <span id="t_s">00秒</span>
+    </h1>
+  </div>
+  <div class="next">
+    <h1>!!!!! I  AM  BACK  YEAH  YEAH !!!!!</h1>
+  </div>
+  <script>
+    function GetRTime() {
+      var EndTime = new Date('2017/9/21 15:0:0');
+      var NowTime = new Date();
+      var t = EndTime.getTime() - NowTime.getTime();
+      var d = 0;
+      var h = 0;
+      var m = 0;
+      var s = 0;
+      if (t >= 0) {
+        d = Math.floor(t / 1000 / 60 / 60 / 24);
+        h = Math.floor(t / 1000 / 60 / 60 % 24);
+        m = Math.floor(t / 1000 / 60 % 60);
+        s = Math.floor(t / 1000 % 60);
+      }
+
+
+      document.getElementById("t_d").innerHTML = d + "天";
+      document.getElementById("t_h").innerHTML = h + "时";
+      document.getElementById("t_m").innerHTML = m + "分";
+      document.getElementById("t_s").innerHTML = s + "秒";
+    }
+    setInterval(GetRTime, 0);
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

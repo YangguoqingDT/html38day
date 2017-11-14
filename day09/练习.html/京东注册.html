@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jingdong</title>
+     <style>
+     *{
+       margin: 0px;
+       padding: 0px;
+     }
+     .item{
+       height: 30px;
+       width: 280px;
+       padding: 10px 10px;
+       border: 1px solid gray;
+       font-size: 16px;
+       position: relative;
+       margin: 50px auto;
+     }
+     .item >div{
+       float: left;
+       height: 30px;
+       line-height: 30px;
+     }
+    .item >input{
+      border: none;
+      float: right;
+      height: 30px;
+      width: 200px;
+      outline: none;
+    }
+    .item>p{
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      font-size: 12px;
+      display: none;
+    }
+    .item>span{
+      position: absolute;
+      top: 10px;
+      left: 100px;
+    }
+     </style>
+  </head>
+  <body>
+    <div class="item">
+      <div>用户名</div>
+      <input type="text">
+      <span>宁德邮箱 手机号</span>
+      <p>支持中文、字母、数字、“-”“_”的组合，4-20个字</p>
+
+    </div>
+
+
+
+      <script src="../jquery.min.js"></script>
+      <script type="text/javascript">
+      $(function() {
+
+        $(".item span").click(function(){
+
+          $(".item >input").focus();
+        });
+
+        $(".item input").focus(function(){
+          $("item span").hide();
+          $(".item p").show();
+        }).blur(function(){
+          $(".item span").show();
+          $(".item p").hide();
+        });
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+@mixin colorAndFont($color:blue,$size:2){
+  color: $color;
+  font-size: $size*10px;
+}
+
+
+@mixin opactiy($value) {
+  opacity: $value/100;
+
+}
+
+@mixin shadow ($value...){
+  box-sizing:
+}

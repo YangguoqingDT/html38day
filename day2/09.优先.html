@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css的优先问题</title>
+    <style>
+    #oneid{
+      color: green;
+    }
+    .one{
+      color: red;
+    }
+    p{
+      color: yellow; !important;
+    }
+    .two{
+      color: purple;
+    }
+    #twoud{
+      color: pink;
+    }
+    .three-1{
+      color: red;
+
+    }
+    div .three-2{
+      color: green;
+    }
+    </style>
+  </head>
+  <body>
+  <div class="one" id="oneid">
+    div
+    <p class="two" id="twoid" style="color:brown;">pppppppppp????</p>
+  </div>
+  <div>
+    <div class="three-1 three-2">divyanse???</div>
+  </div>
+
+  </body>
+</html>

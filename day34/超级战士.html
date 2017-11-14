@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>超级战士</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <h2>点击改变方向</h2>
+    <button id="left">left</button>
+    <button id="right">right</button>
+    <button id="top">top</button>
+    <button id="down">down</button>
+    <script type="text/javascript">
+
+
+
+
+    //总体思路：：：：：：：：：：通过定时器每隔一段时间切换一张图片!!!!!!!
+
+      (function(){
+          var canvas=document.getElementById('canvas');
+          var ctx=canvas.getContext('2d');
+          canvas.width=600;
+          canvas.height=600;
+          canvas.style.border="1px solid #000";
+          //开始绘图
+          var img=new Image();
+          var dirIndex=0;
+          // img.src='image/1.png';
+          img.onload=function(){
+              var i=0;
+              setInterval(function(){
+                  canvas.width=canvas.width;
+                  ctx.drawImage(
+                      img
+                      ,40*i//截取x坐标
+                      ,dirIndex*65//截取y坐标
+                      ,40//截取w
+                      ,65//截取h
+                      ,200
+                      ,200
+                      ,80
+                      ,130
+                  );
+                  i++;
+                  i %= 4;
+              },200)
+          };
+          img.src='image/1.png';
+          var btnLeft=document.getElementById('left');
+          btnLeft.onclick=function(){
+              dirIndex=1;
+          }
+          var btnRight=document.getElementById('right');
+          btnRight.onclick=function(){
+              dirIndex=2;
+          }
+          var btnTop=document.getElementById('top');
+          btnTop.onclick=function(){
+              dirIndex=0;
+          }
+          var btnDown=document.getElementById('down');
+          btnDown.onclick=function(){
+              dirIndex=3;
+          }
+      }());
+    </script>
+  </body>
+</html>

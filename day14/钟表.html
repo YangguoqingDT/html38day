@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>钟表</title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      ul{
+        width: 800px;
+        height: 800px;
+        position: relative;
+        margin: 50px auto;
+        border-radius: 400px;
+        border: 10px solid black;
+        list-style: none;
+        box-sizing: content-box;
+      }
+      .box{
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -350px;
+        margin-top: -350px;
+        border-radius: 350px;
+        background-color: white;
+        z-index: 2;
+      }
+      ul>li{
+        width: 10px;
+        height: 800px;
+        background: gray;
+        position: absolute;
+      }
+      ul>li:nth-child(1){
+        left: 400px;
+        top: 0px;
+        transform: rotate(0deg);
+      }
+      ul>li:nth-child(2){
+        left: 400px;
+        top: 0px;
+        transform: rotate(30deg);
+      }
+      ul>li:nth-child(3){
+        left: 400px;
+        top: 0px;
+        transform: rotate(60deg);
+      }
+      ul>li:nth-child(4){
+        left: 400px;
+        top: 0px;
+        transform: rotate(90deg);
+      }
+      ul>li:nth-child(5){
+        left: 400px;
+        top: 0px;
+        transform: rotate(120deg);
+      }
+      ul>li:nth-child(6){
+        left: 400px;
+        top: 0px;
+        transform: rotate(150deg);
+      }
+      .imd{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        border-radius: 50px;
+        background-color: black;
+        z-index: 3;
+      }
+
+      .miao{
+        position: absolute;
+        left: 400px;
+        top: 250px;
+        width: 5px;
+        height: 150px;
+        background-color: red;
+        z-index: 7;
+        animation: mm 60s linear infinite;
+
+      }
+      @keyframes mm {
+        0%{
+          transform-origin: bottom;
+          transform: rotate(0deg);
+        }
+        50%{
+          transform-origin: bottom;
+          transform: rotate(180deg);
+        }
+        100%{
+          transform-origin: bottom;
+          transform: rotate(360deg);
+        }
+      }
+      .fen{
+        position: absolute;
+        left: 400px;
+        top:300px;
+        width: 10px;
+        height: 100px;
+        background-color: green;
+        z-index: 7;
+        animation: ff 3600s linear infinite;
+      }
+      @keyframes ff {
+        0%{
+          transform-origin: bottom;
+          transform: rotate(0deg);
+        }
+        50%{
+          transform-origin: bottom;
+          transform: rotate(180deg);
+        }
+        100%{
+          transform-origin: bottom;
+          transform: rotate(360deg);
+        }
+      }
+
+      .shi{
+        position: absolute;
+        left: 400px;
+        top: 330px;
+        width: 15px;
+        height: 70px;
+        background-color: yellow;
+        z-index: 7;
+        animation: ss 43200s linear infinite;
+      }
+      @keyframes ss {
+        0%{
+          transform-origin: bottom;
+          transform: rotate(0deg);
+        }
+        50%{
+          transform-origin: bottom;
+          transform: rotate(180deg);
+        }
+        100%{
+          transform-origin: bottom;
+          transform: rotate(360deg);
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <div class="box"></div>
+    <div class="imd"></div>
+        <div class="miao">
+
+        </div>
+        <div class="fen">
+
+        </div>
+        <div class="shi">
+
+        </div>
+
+
+
+  </ul>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>扑克牌</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .head{
+        position: relative;
+        width: 1800px;
+        height: 1000px;
+        margin: 0 auto;
+        border: 1px solid red;
+      }
+      .one{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        background: url("../image/pk1.png");
+        width: 304px;
+        height: 420px;
+        transition: all 2s;
+        z-index: 9;
+      }
+
+      .two{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        background: url("../image/pk2.png");
+        width: 304px;
+        height: 420px;
+        transform: rotate(-60deg);
+        transform-origin: left top;
+        z-index: 9;
+        transition: all 1s;
+        z-index: 8;
+      }
+      .head:hover .two{
+        transform: rotate(0deg);
+
+      }
+      .three{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        background: url("../image/pk1.png");
+        width: 304px;
+        height: 420px;
+        transform: rotate(-120deg);
+        transform-origin: left top;
+        transition: all 1s;
+        z-index: 7;
+
+
+      }
+      .head:hover .three{
+        transform: rotate(0deg);
+
+      }
+      .four{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        background: url("../image/pk2.png");
+        width: 304px;
+        height: 420px;
+        transform: rotate(-180deg);
+        transform-origin: left top;
+        transition: all 1s;
+        z-index: 6;
+
+
+      }
+      .head:hover .four{
+        transform: rotate(0deg);
+
+      }
+      .five{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        background: url("../image/pk1.png");
+        width: 304px;
+        height: 420px;
+        transform: rotate(-240deg);
+        transform-origin: left top;
+        transition: all 1s;
+        z-index: 5;
+
+
+      }
+      .head:hover .five{
+        transform: rotate(0deg);
+
+      }
+      .six{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        background: url("../image/pk2.png");
+        width: 304px;
+        height: 420px;
+        transform: rotate(-300deg);
+        transform-origin: left top;
+        transition: all 1s;
+        z-index: 4;
+
+      }
+      .head:hover .six{
+        transform: rotate(0deg);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+
+
+    <div class="one">
+
+    </div>
+    <div class="two">
+
+    </div>
+    <div class="three">
+
+    </div>
+    <div class="four">
+
+    </div>
+    <div class="five">
+
+    </div>
+    <div class="six">
+
+    </div>
+    </div>
+  </body>
+</html>

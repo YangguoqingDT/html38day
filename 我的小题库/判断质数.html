@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>读出某个范围内的质数</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function isPrime(num){
+      for (var i = 2; i < num; i++) {
+        for (var j = 2; j < i; j++) {
+          if (i % j == 0) {
+            break;
+          }
+        }
+        if (j == i) {
+          console.log(i);
+        }
+      }
+    }
+    /////逻辑要搞清楚！！！！！！！！！！！！！！
+
+    isPrime(1000);
+  </script>
+</body>
+
+</html>

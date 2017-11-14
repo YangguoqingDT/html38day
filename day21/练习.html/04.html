@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      #box{
+        width: 200px;
+        height: 200px;
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <button id="btn1">按钮1</button>
+    </div>
+
+
+
+    <script type="text/javascript">
+    btn1 .addEventListener('click',function(){
+      console.log("%cbtn1被单击xxxx", "color:red;font-size: 40px");
+    },false);
+
+    btn1 .addEventListener('click',function(){
+        console.log("%cbtn1被单击yyyy", "color:red;font-size: 40px");
+    },false);
+
+    box.addEventListener('click',function(){
+      console.log("%cbox 不知道被谁单击", "color:red;font-size: 40px");
+    },false);
+    document.addEventListener('click', function(){
+      console.log("%c document 不知道被谁单击", "color:red;font-size: 40px");
+    },false);
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

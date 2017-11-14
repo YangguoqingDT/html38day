@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  输入： <input type="text" id="ipt">
+  <button id="btn">点击我转化为数字</button>
+  <h1>Number: <span id="show1"></span></h1>
+  <h1>parseInt: <span id="show2"></span></h1>
+  <h1>parseFloat: <span id="show3"></span></h1>
+
+  <script type="text/javascript">
+    var ipt = document.getElementById('ipt');
+    var btn = document.getElementById('btn');
+    var show1 = document.getElementById('show1');
+    var show2 = document.getElementById('show2');
+    var show3 = document.getElementById('show3');
+
+
+
+
+    btn.onclick = function() {
+      var result = Number(ipt.value); //input输入的的都是字符串形式哈哈哈哈！！！！
+      show1.innerHTML = result;
+
+      result = parseInt(ipt.value);//专门将字符串传转化为数字！！！！
+      show2.innerHTML = result;
+
+      result = parseFloat(ipt.value);//专门将字符串转化为数字！！！！
+      show3.innerHTML = result;
+    }
+  </script>
+</body>
+
+</html>

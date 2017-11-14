@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>第一种</title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .box{
+        height: 200px;
+      }
+      .left{
+        width: 200px;
+        height: 200px;
+        background: blue;
+        float: left;
+      }
+      .right{
+        height: 200px;
+        margin-left: 200px;
+        background: yellow;
+      }
+      .head{
+        margin-top: 50px;
+        height: 200px;
+        position: relative;
+      }
+      .lt{
+        width: 200px;
+        height: 200px;
+        background: red;
+        float: left;
+
+      }
+      .rt{
+        position: absolute;
+        left: 200px;
+        top: 0px;
+        right: 0px;
+        background: pink;
+        height: 200px;
+      }
+      .flex{
+        height: 200px;
+        margin-top: 50px;
+        display: flex;
+      }
+      .ll{
+        float: left;
+        height: 200px;
+        width: 200px;
+        background: yellow;
+      }
+      .rr{
+         background-color: green;
+        flex-grow: 1;
+        height: 200px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left">
+
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+
+    <div class="head">
+      <div class="lt">
+
+      </div>
+      <div class="rt">
+
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="ll">
+
+      </div>
+      <div class="rr">
+
+      </div>
+    </div>
+  </body>
+</html>

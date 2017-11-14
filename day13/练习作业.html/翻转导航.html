@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>翻转导航</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .head
+      {
+        width: 456px;
+        height: 100px;
+        /*margin: 200px auto;*/
+        border: 1px solid gray;
+        position: absolute;
+        top: 200px;
+        left: 485px;
+      }
+      .head .one{
+        float: left;
+        height: 100px;
+        width: 150px;
+        border: 1px solid gray;
+        line-height: 100px;
+        background: green;
+        position: relative;
+        transition: all 2s;
+        z-index: 10;
+        transform-origin: top;
+      }
+      .one>span{
+        position: absolute;
+        left: 50px;
+        color: red;
+        font-size: 15px;
+      }
+      .one:hover{
+        transform: rotateX(90deg);
+        color: pink;
+      }
+      .h1{
+        position: absolute;
+        left: 486px;
+        top: 201px;
+        width: 150px;
+        height: 100px;
+        border: 1px solid red;
+        background: pink;
+        line-height: 100px;
+      }
+      .h1>span{
+        margin-left: 50px;
+        color: red;
+        font-size: 15px;
+      }
+      .head .two{
+        float: left;
+        height: 100px;
+        width: 150px;
+        border: 1px solid gray;
+        line-height: 100px;
+        background: green;
+        position: relative;
+        z-index: 10;
+        transition: all 1s;
+      }
+      .two>span{
+        position: absolute;
+        left: 50px;
+        color: red;
+        font-size: 15px;
+      }
+      .two:hover{
+        background: pink;
+        transform: rotateX(90deg);
+      }
+      .h2{
+        position: absolute;
+        left: 636px;
+        top: 201px;
+        width: 150px;
+        height: 100px;
+        border: 1px solid red;
+        background: pink;
+        line-height: 100px;
+        z-index: 1;
+      }
+      .h2>span{
+        margin-left: 50px;
+        color: red;
+        font-size: 15px;
+      }
+
+      .head .three{
+        float: left;
+        height: 100px;
+        width: 150px;
+        border: 1px solid gray;
+        line-height: 100px;
+        background: green;
+        position: relative;
+      }
+      .three>span{
+        position: absolute;
+        left: 50px;
+        color: red;
+        font-size: 15px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="one">
+        <span>导航一</span>
+
+      </div>
+      <div class="two">
+        <span>导航二</span>
+
+      </div>
+      <div class="three">
+        <span>导航三</span>
+
+      </div>
+
+    </div>
+    <div class="h1">
+      <span>美男子</span>
+
+    </div>
+    <div class="h2">
+      <span>美男子</span>
+
+    </div>
+  </body>
+</html>

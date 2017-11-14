@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>数组去重！！</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function uniqueArr(arr){
+        var temp = []; //这个位置不能错！！！！如果现在for的里面就是每次
+        //遍历都会生成一个temp数组！！！！
+        for (var i = 0; i < arr.length; i++) {
+
+          if (temp.indexOf(arr[i]) == -1) {
+            temp.push(arr[i]);
+          }
+        }
+        return temp;
+      }
+
+      var result = [1,2,3,4,5,5,5,5,6,6,6,6777];
+      console.log(uniqueArr(result));
+    </script>
+  </body>
+</html>

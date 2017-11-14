@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>链条</title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .box{
+        width: 882px;
+        height: 86px;
+        margin: 200px auto;
+        overflow: hidden;
+        border: 1px solid red;
+      }
+
+      ul{
+        list-style: none;
+        width: 1774px;
+        height: 100%;
+        animation: run 8s linear infinite;
+      }
+
+      li{
+        float: left;
+      }
+      @keyframes run {
+        0%{
+           left: 0px;
+        }
+        100%{
+          transform: translate(-50%,0);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+    <ul>
+      <li><img src="./image/1.jpg" alt=""></li>
+      <li><img src="./image/2.jpg" alt=""></li>
+      <li><img src="./image/3.jpg" alt=""></li>
+      <li><img src="./image/4.jpg" alt=""></li>
+      <li><img src="./image/5.jpg" alt=""></li>
+      <li><img src="./image/6.jpg" alt=""></li>
+      <li><img src="./image/7.jpg" alt=""></li>
+      <li><img src="./image/1.jpg" alt=""></li>
+      <li><img src="./image/2.jpg" alt=""></li>
+      <li><img src="./image/3.jpg" alt=""></li>
+      <li><img src="./image/4.jpg" alt=""></li>
+      <li><img src="./image/5.jpg" alt=""></li>
+      <li><img src="./image/6.jpg" alt=""></li>
+      <li><img src="./image/7.jpg" alt=""></li>
+    </ul>
+    </div>
+  </body>
+</html>

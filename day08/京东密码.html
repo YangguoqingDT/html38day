@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>京东密码</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .top{
+      width: 1860px;
+      height: 120px;
+      border: 1px solid gray;
+      margin: 0 auto;
+    }
+    .top .picture{
+     margin-left: 300px;
+     margin-top: 20px;
+     margin-right: 20px;
+     float: left;
+    }
+    .top .zhuce{
+      font-size: 20px;
+      float: left;
+      margin-top: 30px;
+    }
+    .top .denglu{
+      float: right;
+      font-size: 15px;
+      margin-top: 40px;
+      margin-right: 300px;
+      margin-left: 10px;
+    }
+    .top .zhanghao{
+      float: right;
+      margin-top: 40px;
+    }
+    .mid1,.mid2, .mid3, .mid4, .mid5, .mid6{
+      border: 1px solid gray;
+      width: 500px;
+      height: 55px;
+      margin-left: 480px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .message >p{
+      color: red;
+      visibility: hidden;
+    }
+    .a1{
+      float: left;
+      line-height: 50px;
+      margin-left: 10px;
+    }
+    .a1 input{
+      height: 54px;
+      width: 426px;
+      color: gray;
+    }
+
+    </style>
+  </head>
+   <body>
+   <div class="top">
+     <div class="picture">
+       <img src="./h.png">
+     </div>
+     <div class="zhuce">
+       <h3><a href="#">欢迎注册</a></h3>
+     </div>
+     <div class="denglu">
+       <a href="#">请登录</a>
+     </div>
+     <div class="zhanghao">
+       已有帐号
+     </div>
+
+   </div>
+
+    <div class="mid1">
+      <div class="a1">
+        用户名：<input style="border:hidden;"type="text" name="username"value="您的账户和登录名">
+      </div>
+
+    </div>
+
+   <div class="mid2">
+     设置密码：<input type="password" name="passwd" value="两种字符组合">
+   </div>
+   <div class="mid3">
+     确认密码：<input type="password" name="passwd" value="再次输入密码">
+   </div>
+   <div class="mid4">
+    中国0086:<input type="text" name="shoujihao" value="常用手机">
+   </div>
+   <div class="mid5">
+   验证码:<input type="text" name="yanzhengma" value="输入验证码">
+   </div>
+   <div class="mid6">
+   手机验证码:<input type="text" name="shoujihaomama" value="常用ded手机">
+   </div>
+   <script src="./jquery.min.js" charset="utf-8"></script>
+   <script type="text/javascript">
+
+    var value=$("value=您的账户和登录名")
+   $(".a1 input").focus(function(){
+     $(".a1 input").css("visibility:hidden");
+   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+
+  </body>
+</html>

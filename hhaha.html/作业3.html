@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>作业3</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .w{
+      width: 1226px;
+      margin: 0 auto;
+    }
+    .head{
+      height: 20px;
+      background-color:#424242;
+      padding: 15px 0px;
+      width: 1843px;
+    }
+    .head .left{
+      float: left;
+      font-size: 13px;
+    }
+    .head .left a{
+      padding: 10px;
+    }
+    .head .right{
+      float: right;
+      padding-left: 10px;
+      font-size: 13px;
+    }
+    .head .right a{
+      padding-left: 10px;
+    }
+    .head .zuo{
+      float: right;
+      padding-left:
+    }
+    .head .right .gouwuche{
+      float: right;
+      margin-left: 30px;
+
+    }
+    .head a{
+      color: #b0b0b0;
+      text-decoration: none;
+    }
+    .head a:hover{
+      color: white;
+    }
+    /*???*/
+    .mid{
+     height: 100px;
+     width: 1226px;
+     float: left;
+    }
+    .mid .logo{
+      float: left;
+      margin-right: 125px;
+      margin-top: 20px;
+    }
+    .mid .wenzi{
+    float: left;
+    margin: 35px 30px;
+    }
+    .mid .wenzi a{
+    color: #333;
+    text-decoration: none;
+    padding-right: 20px;
+    }
+    .mid .wenzi a:hover{
+      color: #ff6700;
+    }
+    .mid .search1{
+      float: right;
+      margin-top: 20px;
+    }
+    .mid .search2{
+      float: right;
+      border: 1px solid gray;
+      width: 250px;
+      height: 45px;
+      margin-top: 20px;
+    }
+    .search2 > ul{
+      list-style: none;
+      visibility: hidden;
+    }
+    .search2 >ul li{
+      padding: 10px 0px;
+    }
+    .search2 >ul li a{
+      font-size: 12px;
+    }
+    .beyond{
+      height: 460px;
+      float: left;
+    }
+    .beyond .much{
+      float: left;
+      height: 360px;
+      width: 214px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 49px 10px;
+    }
+    .beyond .much li {
+      list-style: none;
+      padding-bottom: 13px;
+    }
+    .beyond .much a{
+      color: white;
+      text-decoration: none;
+    }
+    .beyond .much a:hover{
+      color: #ff6700;
+    }
+    .beyond .datu{
+      float: left;
+    }
+    .xia{
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .xia .tu1{
+      height: 165px;
+      width: 233px;
+      background-color: #555;
+      margin-right: 15px;
+      border: 1px solid #333;
+      float: left;
+    }
+    .xia .tu1 li{
+      float: left;
+      border: 1px solid gray;
+      list-style: none;
+      height: 82px;
+      width: 70px;
+      padding-left: 5px;
+      position: relative;
+    }
+    .xia .tu1 li a{
+      position: absolute;
+      top:55px; left:12px;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+    }
+    .li-1{
+      background-image: url(./sprite_fs@1x.png);
+      background-repeat: no-repeat;
+      background-position: -16px 31px;
+    }
+    .li-2{
+    background-image: url(./sprite_fs@1x.png);
+    background-repeat: no-repeat;
+    background-position: 24px 31px;
+    }
+    .li-3{
+    background-image: url(./sprite_fs@1x.png);
+    background-repeat: no-repeat;
+    background-position: 27px 31px;
+    }
+    .li-4{
+    background-image: url(./sprite_fs@1x.png);
+    background-repeat: no-repeat;
+    background-position: 27px 31px;
+    }
+    .li-5{
+    background-image: url(./sprite_fs@1x.png);
+    background-repeat: no-repeat;
+    background-position:27px 31px;
+    }
+    .li-6{
+    background-image: url(./sprite_fs@1x.png);
+    background-repeat: no-repeat;
+    background-position:27px 31px;
+    }
+    .xia .tu2,.tu3{
+    float: left;
+    margin-right: 15px;
+
+    }
+    .xia .tu4{
+      float: left;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="w">
+        <div class="left">
+          <a href="#">小米商城</a>
+          <a href="#">MIUI</a>
+          <a href="#">米聊</a>
+          <a href="#">游戏</a>
+          <a href="#">多看阅读</a>
+          <a href="#">云服务</a>
+          <a href="#">金融</a>
+          <a href="#">小米商城移动版</a>
+          <a href="#">问题反馈</a>
+          <a href="#">Select Region</a>
+        </div>
+        <div class="right">
+          <div class="gouwuche">
+            <a href="#">购物车(0)</a>
+          </div>
+          <div class="zuo">
+          <a href="#">登录</a>
+          <a href="#">注册</a>
+          <a href="#">消息通知</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="w">
+    <div class="mid">
+      <div class="w">
+      <div class="logo">
+        <img src="./xiaomi.png">
+      </div>
+      <div class="wenzi">
+        <a href="#">小米手机</a>
+        <a href="#">红米</a>
+        <a href="#">平板~笔记本</a>
+        <a href="#">电视</a>
+        <a href="#">盒子~影音</a>
+        <a href="#">路由器</a>
+        <a href="#">智能硬件</a>
+        <a href="#">服务</a>
+        <a href="#">社区</a>
+      </div>
+      <div class="search1">
+      <img src="./sosuo.png">
+      </div>
+      <div class="search2">
+        <input  style="border:0 text-align:center"type="text" name="小米手机" value="小米MAX2">
+      <ul>
+        <li><a href="#">小米</a><li>
+        <li><a href="#">小米</a><li>
+        <li><a href="#">小米</a><li>
+        <li><a href="#">小米</a><li>
+        <li><a href="#">小米</a><li>
+        <li><a href="#">小米</a><li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="beyond">
+    <div class="much">
+      <ul>
+
+      <li><a href="#">手机 电话卡</a></li>
+      <li><a href="#">笔记本 平本</a></li>
+      <li><a href="#">电视 盒子</a></li>
+      <li><a href="#">路由器 智能硬件</a></li>
+      <li><a href="#">移动电源 电池 插线版</a></li>
+      <li><a href="#">耳机音像</a></li>
+      <li><a href="#">保护套 贴膜</a></li>
+      <li><a href="#">线材 支架 储存卡</a></li>
+      <li><a href="#">箱包 鞋 服饰 眼镜</a></li>
+      <li><a href="#">米兔 生活周边</a></li>
+    </ul>
+
+    </div>
+    <div class="datu">
+      <img src="./xiaomi6.png" alt="">
+    </div>
+  </div>
+  <div class="xia">
+    <div class="tu1">
+     <ul>
+       <li class="li-1"><a href="#">选购手机</a></li>
+       <li class="li-2"><a href="#">企业团购</a></li>
+       <li class="li-3"><a href="#">F码通道</a></li>
+       <li class="li-4"><a href="#">米粉卡</a></li>
+       <li class="li-5"><a href="#">依旧欢心</a></li>
+       <li class="li-6"><a href="#">话费充值</a></li>
+     </ul>
+    </div>
+    <div class="tu2">
+      <img src="./tu2.png" alt="">
+    </div>
+    <div class="tu3">
+      <img src="./tu3.png" alt="">
+    </div>
+    <div class="tu4">
+      <img src="./tu4.png" alt="">
+    </div>
+  </div>
+  <script src="./jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+
+  $(".search2 input").focus(function(){
+    $(".search2 ul").css("visibility","visible");
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  </body>
+</html>

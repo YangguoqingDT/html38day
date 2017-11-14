@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>轮播图</title>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 1200px;
+      height: 800px;
+      margin: 50px auto;
+      border: 1px solid gray;
+      overflow: auto;
+      position: relative;
+
+    }
+    /*#box img{
+        display: inline-block;
+        float: left;
+      }*/
+
+    #btn1,
+    #btn2,
+    #btn3 {
+      width: 40px;
+      height: 40px;
+      position: fixed;
+      border-radius: 50% 50%;
+      background-color: red;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    #btn1 {
+      left: 850px;
+      top: 800px;
+    }
+
+    #btn2 {
+      left: 900px;
+      top: 800px;
+    }
+
+    #btn3 {
+      left: 950px;
+      top: 800px;
+    }
+    /*#box li{
+        float: left;
+      }*/
+
+    li {
+      list-style: none;
+    }
+
+    #two {
+      position: absolute;
+      left: 1200px;
+      top: 0;
+    }
+
+    #three {
+      position: absolute;
+      left: 2400px;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn1">a</button>
+  <button id="btn2">b</button>
+  <button id="btn3">c</button>
+
+   <div id="box">
+    <ul>
+      <li><img src="./image/bg1.jpg" alt="" id="one"></li>
+      <li><img src="./image/bg2.jpg" alt="" id="two"></li>
+      <li><img src="./image/bg3.jpg" alt="" id="three"></li>
+    </ul>
+    </div>
+
+  <!-- <ul class="aa">
+      <li><img src="./image/1.jpg" alt=""></li>
+      <li><img src="./image/2.jpg" alt=""></li>
+    </ul> -->
+  <script src="./jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+
+    var body = document.getElementsByName('body');
+    var two = document.getElementById('two');
+    var three = document.getElementById('three');
+
+    var timer;
+
+    btn1.onclick = function() {
+      clearInterval(timer);
+      timer = setInterval(function() {
+        var current = document.body.scrollLeft;
+        current -= 100;
+        if (current <= 100) {
+          window.scrollTo(0, 0);
+          clearInterval(timer);
+        }
+        window.scrollTo(current, 0);
+      }, 30)
+    }
+    btn2.onclick = function() {
+      clearInterval(timer);
+      timer = setInterval(function() {
+        var current = document.body.scrollLeft;
+        current += 100;
+        if (current >= 1200) {
+          window.scrollTo(1200, 0);
+          clearInterval(timer);
+        }
+        window.scrollTo(current, 0);
+      }, 30)
+    }
+    btn3.onclick = function() {
+      clearInterval(timer);
+      timer = setInterval(function() {
+        var current = document.body.scrollLeft;
+        current += 100;
+        if (current >= 2400) {
+          window.scrollTo(2400, 0);
+          clearInterval(timer);
+        }
+        window.scrollTo(current, 0);
+      }, 30)
+    }
+  </script>
+
+
+</body>
+
+</html>

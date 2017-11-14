@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flex</title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .nb{
+        height: 200px;
+        margin-top: 50px;
+      }
+      .one{
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        float: left;
+      }
+      .two{
+        height: 200px;
+        display: flex;
+
+      }
+      .three{
+        height: 200px;
+        width: 200px;
+        float: right;
+        background: red;
+        order: -1
+      }
+      .four{
+        flex-grow: 1;
+        height: 200px;
+        background-color: pink;
+        order: -3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nb">
+      <div class="one">
+
+      </div>
+      <div class="two">
+        <div class="three">
+
+        </div>
+        <div class="four">
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

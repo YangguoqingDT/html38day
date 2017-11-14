@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" id="btn">芝麻开门</button>
+    <script type="text/javascript">
+    function createCaptcha(num){
+      var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+      var len = str.length;
+      var index;
+      var captcha = "";
+      for (var  i = 0; i < num; i++) {
+        index = Math.floor(Math.random() * len);
+        captcha +=str[index];
+      }
+      return captcha;
+    }
+    console.log(createCaptcha(4));
+    </script>
+
+  </body>
+</html>

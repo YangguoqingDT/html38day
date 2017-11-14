@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>xiaomimii</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .w{
+        width: 1300px;
+        margin: 0 auto;
+      }
+      .box{
+        background-color: lightgray;
+        width: 100%;
+        height: 900px;
+      }
+      .title{
+        margin-bottom: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .title h4{
+        float: left;
+      }
+      #menu{
+        float: right;
+      }
+      #menu li {
+        padding-left: 20px;
+        float: right;
+        list-style: none;
+      }
+      #menu li a{
+        color: black;
+        text-decoration: none;
+      }
+      #menu li a:hover{
+        text-decoration: underline;
+        color: red;
+      }
+      .box.left{
+        height: 600px;
+        width: 250px;
+        border: 1px solid red;
+      }
+      #pic{
+        width: 100%;
+        height: 600px;
+      }
+      #pic li {
+        width: 250px;
+        height: 300px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        position: relative;
+        padding: 30px 0;
+        text-align: center;
+        overflow: hidden;
+      }
+      #pic>li:nth-child(2) .move{
+        position: absolute;
+        top:360px;
+        left: 0px;
+        width: 250px;
+        height: 100px;
+        background-color: red;
+        overflow: hidden;
+        transition: all 1s;
+
+      }
+      #pic>li:nth-child(2):hover{
+        overflow: visible;
+        transform: translate(100px,0);
+      }
+      #pic img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+      }
+      li{
+        list-style: none;
+      }
+      .wenzi1, .wenzi4, .wenzi7,.wenzi10,.wenzi13,.wenzi16,.wenzi19,.wenzi22{
+        position: absolute;
+        top: 230px;
+        left: 75px;
+      }
+      .wenzi2, .wenzi5, .wenzi8,.wenzi11,.wenzi14,.wenzi17,.wenzi20,.wenzi23{
+        position: absolute;
+        top: 255px;
+        left: 50px;
+        font-size: 12px;
+        color: gray;
+      }
+      .wenzi3, .wenzi6, .wenzi9,.wenzi12,.wenzi15,.wenzi18,.wenzi21,.wenzi24{
+        position: absolute;
+        color: rgba(187, 122, 9, 0.91);
+        top: 280px;
+        left: 100px;
+      }
+      #pic .nb10{
+        height: 130px;
+      }
+      #pic .nb10 img{
+        float: right;
+      }
+      .wenzi25{
+        position: absolute;
+        left: 30px;
+        top: 50px;
+      }
+      .wenzi26{
+        position: absolute;
+        left: 30px;
+        top: 70px;
+        color: rgba(187, 122, 9, 0.91);
+      }
+      .price{
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 80px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        background-color: red;
+        font-size: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="w">
+        <div class="title">
+          <h4>智能</h4>
+          <ul id="menu">
+            <li><a href="#">热门</a></li>
+            <li><a href="#">出行</a></li>
+            <li><a href="#">健康</a></li>
+            <li><a href="#">酷玩</a></li>
+            <li><a href="#">路由器</a></li>
+          </ul>
+        </div>
+        <ul id="pic">
+          <li class="one"><img src="./小米文档tp/01.jpg" alt=""></li>
+          <li><img src="./小米文档tp/02.jpg" alt="">
+           <span class="wenzi1">米兔儿童手表</span>
+           <span class="wenzi2">11重安全设计，五重经准定位</span>
+           <span class="wenzi3">299元</span>
+           <div class="move">
+             dshfjksdskjdfhkjdhg<br>
+             sahflkjfsdjfklfjlksdjfksdl
+           </div>
+          </li>
+          <li><img src="./小米文档tp/03.jpg" alt="">
+            <span class="wenzi4">米兔儿童手表</span>
+            <span class="wenzi5">11重安全设计，五重经准定位</span>
+            <span class="wenzi6">299元</span>
+          </li>
+          <li><img src="./小米文档tp/04.png" alt="" class="four">
+            <span class="price">享受9.1折</span>
+            <span class="wenzi7">米兔儿童手表</span>
+            <span class="wenzi8">11重安全设计，五重经准定位</span>
+            <span class="wenzi9">299元</span>
+          </li>
+          <li><img src="./小米文档tp/05.jpg" alt="">
+            <span class="wenzi10">米兔儿童手表</span>
+            <span class="wenzi11">11重安全设计，五重经准定位</span>
+            <span class="wenzi12">299元</span>
+          </li>
+          <li><img src="./小米文档tp/06.jpg" alt="" class="six">
+            <span class="wenzi13">米兔儿童手表</span>
+            <span class="wenzi14">11重安全设计，五重经准定位</span>
+            <span class="wenzi15">299元</span>
+          </li>
+          <li><img src="./小米文档tp/07.jpg" alt="">
+            <span class="wenzi16">米兔儿童手表</span>
+            <span class="wenzi17">11重安全设计，五重经准定位</span>
+            <span class="wenzi18">299元</span>
+          </li>
+          <li><img src="./小米文档tp/08.jpg" alt="">
+            <span class="wenzi19">米兔儿童手表</span>
+            <span class="wenzi20">11重安全设计，五重经准定位</span>
+            <span class="wenzi21">299元</span>
+          </li>
+          <li><img src="./小米文档tp/09.jpg" alt="">
+            <span class="wenzi22">米兔儿童手表</span>
+            <span class="wenzi23">11重安全设计，五重经准定位</span>
+            <span class="wenzi24">299元</span>
+          </li>
+          <li class="nb10"><img src="./小米文档tp/10.jpg" alt="">
+            <span class="wenzi25">米兔儿童手表</span>
+            <span class="wenzi26">299元</span>
+          </li>
+        </ul>
+
+
+      </div>
+
+    </div>
+    <script type="text/javascript">
+      var item = document.getElementsByClassName('item');
+      item.onfocus=function(){
+
+      }
+    </script>
+  </body>
+</html>

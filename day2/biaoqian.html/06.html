@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>交集选择器</title>
+    <style>
+    /*即满足式P，有满足包含color_red的类
+    交集选择其中间连续，没有空格*/
+    div p.color_red.one{
+      color: red;
+    }
+    h1 p#p1 span{
+      color: yellow;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- 添加两个类 -->
+      <p class="color_red one">11111</p>
+      <p>222</p>
+      <p>33333</p>
+    </div>
+    <div>
+      <h1 class="color_red">sigkjkljkjlj</h1>
+    </div>
+    <p class="color_red">ppppppp</p>
+    <h1>
+      <p id="p1"><span>wesdfsfsfgsdg</span></p>
+    </h1>
+
+
+
+  </body>
+</html>

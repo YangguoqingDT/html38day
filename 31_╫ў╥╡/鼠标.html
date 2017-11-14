@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>放大镜</title>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 880px;
+      height: 500px;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      margin-left: -440px;
+    }
+
+    .left {
+      width: 350px;
+      height: 350px;
+      position: relative;
+      float: left;
+      border: 1px solid lightgray;
+    }
+
+    .left .look {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      background: yellow;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+    .right{
+      width: 500px;
+      height: 500px;
+      float: right;
+      border: 1px solid lightgray;
+      overflow: hidden;
+      display: none;
+      position: relative;
+    }
+    .right .big-image{
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box" id="box-id">
+      <div class="left" id="left-id">
+          <img src="./image/jd-1.jpg" alt="">
+          <div class="look" id="look-id"></div>
+      </div>
+      <div class="right" id="right-id">
+          <div class="big-image" id="big-id">
+              <img src="./image/jd-2.jpg" alt="">
+          </div>
+      </div>
+  </div>
+
+</body>
+
+</html>

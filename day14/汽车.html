@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>汽车</title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .one{
+        width: 1600px;
+        height: 800px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .aa{
+        position: absolute;
+        left: 200px;
+        top: 300px;
+        background: url("./image/car.jpg") no-repeat;
+
+        animation: car 3s linear  forwards 1;
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+      }
+      @keyframes  car{
+       0%{
+
+       }
+       5%{
+         left:100px;
+
+         transform: skewX(-30deg);
+       }
+       85%{
+         left: 800px;
+       }
+
+
+       90%{
+         left: 900px;
+         transform: skewX(30deg);
+
+       }
+       100%{
+         left: 900px;
+          transform: skewX(0deg);
+       }
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="aa">
+
+      </div>
+    </div>
+
+  </body>
+</html>

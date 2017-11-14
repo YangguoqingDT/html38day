@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .error{
+        color: red;
+        visibility: hidden;
+      }
+      .error.show{
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+
+    function convert(str){
+      var obj = {};
+      var temp = [];
+      str.replace(/([^&=]+)=([^&=]+)/g, function(match, p1, p2){
+        obj[p1] = obj[p1] ? (obj[p1] + "," + p2)
+      });
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

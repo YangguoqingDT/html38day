@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function convert() {
+          var num = prompt('请输入一个十进制非负整数：', '52');
+          var temp = num;
+          var arr = new Array();
+          for (var i = 0; 1; i++) {
+              if (num / 2 >= 1) {
+                  arr[i] = num % 2;
+                  num = parseInt(num / 2);
+              } else {
+                  arr[i] = 1;
+                  break;
+              }
+          }
+          document.write('十进制的' + temp + '转化成二进制为：');
+          for (i = arr.length; i > 0; i--) {
+              document.write(arr[i-1]);
+          }
+      }
+      convert();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table id="maintable" class="table" width="100%" layoutH="138">
+            <thead>
+                <tr>
+                        <th width="80">name</th>
+                        <th width="80">age</th>
+                        <th width="120">score</th>
+                    </tr>
+            </thead>
+            <tbody>
+
+                <tr id="content" target="sid_user" rel="1">
+                  <td width="80"></td>
+                  <td id="name" width="80">lisi</td>
+                  <td id="age" width="120">8</td>
+                  <td id="score" width="120">88</td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript">
+        $(function () {
+//            debugger;
+            $.ajax({
+                type: "get",
+                url: "../App_Code/MaterialInfo.cs",
+                dataType: "json",
+                success: function (Json) {
+                    alert(Json);
+                    var obj = eval(Json);
+                    $("#maintable tbody tr").remove();
+                    for (var i = 0; i < obj.length; i++) {
+                        var row = $("#content").clone();
+                        row.find("#ID").text(obj[i].ID);
+                        row.find("#MaterialCode").text(obj[i].MaterialCode);
+                        row.find("#MaterialName").text(obj[i].MaterialName);
+                        row.find("#Size").text(obj[i].Size);
+                        row.find("#Unit").text(obj[i].Unit);
+                        row.find("#Type").text(obj[i].Type);
+                        row.find("#Mangent").text(obj[i].Mangent);
+                        row.find("#text").text(obj[i].text);
+                        row.appendTo("#maintable");
+                    }
+                }, error: function () {
+                    alert("加载失败");
+                }
+            })
+        })
+    </script>
+  </body>
+</html>
